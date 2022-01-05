@@ -42,6 +42,11 @@ public class bai1 {
             }
         }
         System.out.printf("\nGia tri nho nhat trong mang la: %d ",min);
-        System.out.printf("\n");
+        for ( i = 0; i < n; i++) {
+            if (a[i]==min) {
+                System.out.printf("o vi tri thu %d ",i+1);
+            }
+        }
+        
     }
 }
