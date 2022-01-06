@@ -6,18 +6,18 @@ import java.util.*;
 public class bai3 {
     public static void main(String [] arg)
     {
-        int a,b,c,i;
-        float s,p;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap canh a: ");
-        a = sc.nextInt();
-        System.out.println("Nhap canh b: ");
-        b = sc.nextInt();
-        System.out.println("Nhap canh c: ");
-        c = sc.nextInt();
-        p =(float)((a+b+c)/2);
-        s = (float) Math.sqrt(p*(p-a)*(p-b)*(p-c));
-        System.out.printf("\nDien tich tam giac la: %f",s);
-        System.out.printf("\n");
+        double a, b, c, s, p=0;
+        Scanner sc=new Scanner(System.in);
+        a = sc.nextDouble();
+        b = sc.nextDouble();
+        c = sc.nextDouble();
+        if ((a+b<=c)||(a+c<=b)||(b+c<=a)) {
+            System.out.printf("\na, b, c khong phai 3 canh 1 tam giac");
+        }
+        else
+            p=(a+b+c)/2;
+            s=Math.sqrt(p*(p-a)*(p-b)*(p-c));
+            System.out.println(s);
     }
 }
+//minh luo`i nen moi nguoi them cac cau lenh nhap nhe' :> heh
